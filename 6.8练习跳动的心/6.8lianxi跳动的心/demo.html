@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>跳动的心</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.wrap{
+			width:500px;
+			height:500px;
+			margin:20px auto;
+			animation:jump .5s ease-in-out 0s alternate infinite;
+			position:relative;
+		}
+		@keyframes jump{
+		0%{
+			transform:scale(0.9,0.9);
+			/*transform:rotateZ(0deg);*/
+		}
+		100%{
+			transform:scale(1.2,1.2);
+			/*transform:rotate(45deg);*/
+		}
+	}
+	@-webkit-keyframes jump{
+		0%{
+			transform:scale(0.9,0.9);
+		}
+		100%{
+			transform:scale(1.2,1.2);
+		}
+	}
+		#ser1{
+			width:200px;
+			height:200px;
+			border-radius: 50%;
+			background:red;
+			float: left;
+
+		}
+		#ser2{
+			width:200px;
+			height:200px;
+			border-radius:50%;
+			background:red;
+			float: left;
+			margin-left: -50px;
+		}
+		#ser3{
+			width:200px;
+			height:200px;
+			background:red;
+			transform:rotate(44deg);
+			position: absolute;
+			left:78px;
+			top:76px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div id="ser1"></div>
+		<div id="ser2"></div>
+		<div id="ser3"></div>
+	</div>	
+</body>
+</html>

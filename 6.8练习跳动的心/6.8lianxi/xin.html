@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin:0;
+		padding: 0;
+	}
+	#box{
+		width:400px;
+		height: 400px;
+		margin: 0 auto;
+		position: relative;
+		margin-top: 100px;
+		animation:jump .5s ease-in-out 0s alternate infinite;
+	}
+	@keyframes jump{
+		0%{
+			transform:scale(0.9,0.9);
+			/*transform:rotateZ(0deg);*/
+		}
+		100%{
+			transform:scale(1.2,1.2);
+			/*transform:rotate(45deg);*/
+		}
+	}
+	@-webkit-keyframes jump{
+		0%{
+			transform:scale(0.9,0.9);
+		}
+		
+		100%{
+			transform:scale(1.2,1.2);
+		}
+	}
+	#one{
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		background: red;
+		float: left;
+	}
+	#two{
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		background: red;
+		float: left;
+		margin-left: -50px;
+	}
+	#three{
+		width: 200px;
+		height:200px;
+		background: red;
+		transform:rotate(44deg);
+		position: absolute;
+		top:75px;
+		left:78px;
+	}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="one"></div>
+		<div id="two"></div>
+		<div id="three"></div>
+	</div>
+</body>
+</html>
